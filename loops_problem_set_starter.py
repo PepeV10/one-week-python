@@ -42,3 +42,26 @@ while user_input != passphrase:
     print("Your passphrase is incorrect, please enter the correct passphrase: ")
     user_input = input("Try again: ").lower()
 
+"""
+# Colt's Solutions
+word = "supercalifragilisticexpialidocious"
+for char in word:
+    print(char)
+
+idx = 0
+while idx < len(word):
+    print(word[idx])
+    idx += 1
+
+num = 100
+while num <= 140:
+    print(num)
+    num += 2
+
+for x in range(100, 102, 2):
+    print(x)
+
+reply = input("Enter the passphrase: ")
+while reply != "sillygoose":
+    reply = input("Enter the passphrase: ")
+"""
