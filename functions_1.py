@@ -69,3 +69,30 @@ def daily_quote():
 
 daily_quote()
 """
+
+def send_email():
+    print("Sending email to contact@domain.com")
+    print("Email sent successfully!")
+
+send_email()
+
+def is_even(num):
+    return num % 2 == 0
+
+# Example usage:
+print(is_even(2))  # Output: True
+print(is_even(3))  # Output: False
+
+def slugify(phrase):
+    return phrase.lower().strip().replace(" ", "-")
+
+slugify("I really love you, but you don't love me!")
+
+def count_vowel(phrase):
+    count = 0
+    for char in phrase:
+        if char in "aeiou":
+            count += 1
+    return count
+
+count_vowel("Hello")
