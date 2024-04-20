@@ -97,3 +97,44 @@ def over_nine_thousand(lst):
 
 Our solution follows a similar pattern to some of the other code challenges, except that we have a condition where we end early. In the case where we reach a sum greater than 9000, we can use the break keyword to exit our loop. This will continue to execute the code outside of our loop, which in this case, returns the sum that we found.
 """
+
+
+"""
+3. Max Num
+Here is a more traditional coding problem for you. This function will be used to find the maximum number in a list of numbers. This can be accomplished using the max() function in python, but as a challenge, we are going to manually implement this function. Here is what we need to do:
+
+Define the function to accept a list of numbers called nums
+Set our default maximum value to be the first element in the list
+Loop through every number in the list of numbers
+Within the loop, if we find a number greater than our starting maximum, then replace the maximum with what we found.
+Return the maximum number
+Coding question
+Questions
+Create a function named max_num() that takes a list of numbers named nums as a parameter.
+
+The function should return the largest number in nums
+"""
+
+#Write your function here
+def max_num(nums):
+    maximum_number = nums[0]
+    for num in nums:
+        if num > maximum_number:
+            maximum_number = num
+    return maximum_number
+
+#Uncomment the line below when your function is done
+print(max_num([50, -10, 0, 75, 20]))
+
+"""
+Here is one way to solve this:
+
+def max_num(nums):
+  maximum = nums[0]
+  for number in nums:
+    if number > maximum:
+      maximum = number
+  return maximum
+
+There are a few different ways to accomplish this task, but the way we did it was to check every element in the list and see if there is one bigger than what we currently think is the biggest. If there is a bigger one, then replace it. We keep replacing the number until the largest number has been found.
+"""
