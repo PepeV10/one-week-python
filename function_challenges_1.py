@@ -77,3 +77,39 @@ The first line is the function header which uses def to define the function foll
 
 On our next line, we use return to show that this function is going to return a value when it is called. Next to the return keyword, we define what value is going to be returned. Since we need the tenth power of our input value, we can use the power operator in python which is **. Using this knowledge, in order to get the tenth power of our input value, we use num ** 10.
 """
+
+
+
+
+
+"""
+2. Square Root
+Another useful function for solving math problems is the square root function. We can create this using similar steps from the last problem. The code will look very similar. We need to:
+
+Set up the function header for square_root which accepts one parameter
+Take the square root of the input value
+Return the result
+Coding question
+Questions
+Write a function named square_root() that has one parameter named num.
+
+Use exponents (**) to return the square root of num.
+"""
+# Write your square_root function here:
+def square_root(num):
+    return num ** 0.5
+
+# Uncomment these function calls to test your square_root function:
+#print(square_root(16))
+# should print 4
+#print(square_root(100))
+# should print 10
+
+"""
+Let’s go over one possible solution:
+
+def square_root(num):
+  return num ** 0.5
+
+As you can see, this solution is very similar to the last problem. In this case, the only changes we need are the function name and changing the power value to 0.5. We define the function called square_root with one parameter. We then take the one half power of the input value which is mathematically the same as taking the square root and return it.
+"""
