@@ -113,3 +113,47 @@ def square_root(num):
 
 As you can see, this solution is very similar to the last problem. In this case, the only changes we need are the function name and changing the power value to 0.5. We define the function called square_root with one parameter. We then take the one half power of the input value which is mathematically the same as taking the square root and return it.
 """
+
+"""
+3. Win Percentage
+Next, we will create a function which calculates the percentage of games won. In order to do this, we will need to know how many total games there were and divide the number of wins by the total number of games. For this function, there will be two input parameters, the number of wins and the number of losses. We also need to make sure that we return the result as a percentage (in the range of 0 to 100). In order to create this method we need the following steps:
+
+Define the function header with two parameters, wins and losses
+Calculate the total number of games using the number of wins and losses
+Get the ratio of winning using the number of wins out of the total number of games.
+Convert the ratio to a percentage
+Return the percentage
+Coding question
+Questions
+Create a function called win_percentage() that takes two parameters named wins and losses.
+
+This function should return out the total percentage of games won by a team based on these two numbers.
+"""
+
+# Write your win_percentage function here:
+def win_percentage(wins, losses):
+    # Calculate the total number of games
+    total_games = wins + losses
+    # Avoid division by zero error
+    if total_games == 0:
+        return 0
+    # Calculate the percentage of wins
+    percentage_wins = (wins / total_games) * 100
+    return percentage_wins
+
+# Uncomment these function calls to test your win_percentage function:
+print(win_percentage(5, 5))
+# should print 50
+print(win_percentage(10, 0))
+# should print 100
+
+"""
+Let’s go over how we completed this function:
+
+def win_percentage(wins, losses):
+  total_games = wins + losses
+  ratio_won = wins / total_games
+  return ratio_won * 100
+
+First, we defined our function with two parameters, one for games won and one for games lost. Next, we calculated the total number of games using the number of wins + losses. After that, we use calculate the ratio of wins out of the total number of games by dividing wins by our total_games variable. Since this gives us a ratio and we want it in percentage form, we multiply the answer by 100 and return it.
+"""
