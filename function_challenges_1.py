@@ -157,3 +157,38 @@ def win_percentage(wins, losses):
 
 First, we defined our function with two parameters, one for games won and one for games lost. Next, we calculated the total number of games using the number of wins + losses. After that, we use calculate the ratio of wins out of the total number of games by dividing wins by our total_games variable. Since this gives us a ratio and we want it in percentage form, we multiply the answer by 100 and return it.
 """
+
+
+
+
+
+"""
+4. Average
+Let’s create a function which takes the average of two numbers. These two numbers will be the input of the function and the output will be the average of the two. In order to do this, we need to do a few steps:
+
+Define the function with two input parameters, num1 and num2
+Calculate the sum of the two numbers
+Divide the sum by the number of inputs to the function
+Return the answer
+
+Write a function named average() that has two parameters named num1 and num2.
+
+The function should return the average of these two numbers.
+"""
+ Write your average function here:
+def average(num1, num2):
+  return (num1 + num2) / 2
+# Uncomment these function calls to test your average function:
+#print(average(1, 100))
+# The average of 1 and 100 is 50.5
+#print(average(1, -1))
+# The average of 1 and -1 is 0
+"""
+Let’s look at this solution:
+
+def average(num1, num2):
+  return (num1 + num2) / 2
+
+In this solution, we defined the function with two parameters one line and returned the average on the next line. When returning the value, we used parentheses around the addition to cause the two numbers to be added together first before dividing by two.
+"""
+
